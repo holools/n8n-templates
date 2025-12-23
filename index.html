@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>قوالب n8n لمنصة سلة</title>
+  <title>قوالب n8n احترافية مخصصة لمنصة سلة</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -15,11 +15,7 @@
       --bg-light: #f9fefe;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: "Tajawal", sans-serif;
@@ -28,10 +24,7 @@
       line-height: 1.8;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    a { text-decoration: none; color: inherit; }
 
     /* ===== Banner ===== */
     .banner {
@@ -50,12 +43,8 @@
     }
 
     @keyframes scrollText {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-100%);
-      }
+      from { transform: translateX(0); }
+      to { transform: translateX(-100%); }
     }
 
     /* ===== Header ===== */
@@ -76,12 +65,7 @@
       justify-content: space-between;
     }
 
-    .home-icon {
-      font-weight: 700;
-      color: var(--primary);
-      font-size: 18px;
-    }
-
+    .home-icon { font-weight: 700; color: var(--primary); font-size: 18px; }
     .contact-btn {
       background-color: var(--primary);
       color: #ffffff;
@@ -112,11 +96,7 @@
       text-align: center;
     }
 
-    .modal-content h3 {
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
-
+    .modal-content h3 { color: var(--primary); margin-bottom: 10px; }
     .close-x {
       position: absolute;
       top: 12px;
@@ -133,21 +113,9 @@
       padding: 70px 20px;
     }
 
-    .intro {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .intro h2 {
-      font-size: 32px;
-      color: var(--primary);
-      margin-bottom: 12px;
-    }
-
-    .intro p {
-      font-size: 16px;
-      color: #4a6b73;
-    }
+    .intro { text-align: center; margin-bottom: 60px; }
+    .intro h2 { font-size: 32px; color: var(--primary); margin-bottom: 12px; }
+    .intro p { font-size: 16px; color: #4a6b73; }
 
     /* ===== Cards ===== */
     .cards {
@@ -157,17 +125,8 @@
       margin-bottom: 80px;
     }
 
-    @media (max-width: 900px) {
-      .cards {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .cards {
-        grid-template-columns: 1fr;
-      }
-    }
+    @media (max-width: 900px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
 
     .card {
       background: #ffffff;
@@ -187,27 +146,47 @@
       box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     }
 
-    .card img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
+    .card img { max-width: 100%; border-radius: 10px; margin-bottom: 15px; }
+
+    .card-actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
     }
 
-    .card h3 {
-      font-size: 18px;
-      margin-bottom: 8px;
-      color: var(--primary);
-    }
-
-    .card p {
+    .youtube-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 16px;
+      background-color: #ff0000;
+      color: #fff;
+      border-radius: 8px;
       font-size: 14px;
-      color: #5c7d84;
+      font-weight: 600;
+      transition: all 0.25s ease;
     }
 
-    .placeholder {
-      font-size: 16px;
-      color: #9bb7bc;
+    .youtube-btn:hover { background-color: #cc0000; transform: translateY(-2px); }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 8px 14px;
+      background-color: #1976d2;
+      color: #fff;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.25s ease;
     }
+
+    .download-btn:hover { background-color: #125aa0; transform: translateY(-2px); }
+
+    .placeholder { font-size: 16px; color: #9bb7bc; }
 
     /* ===== Why ===== */
     .why {
@@ -218,20 +197,9 @@
       text-align: center;
     }
 
-    .why h3 {
-      color: var(--primary);
-      margin-bottom: 20px;
-      font-size: 24px;
-    }
-
-    .why ul {
-      list-style: none;
-    }
-
-    .why li {
-      padding: 8px 0;
-      font-size: 15px;
-    }
+    .why h3 { color: var(--primary); margin-bottom: 20px; font-size: 24px; }
+    .why ul { list-style: none; }
+    .why li { padding: 8px 0; font-size: 15px; }
 
     /* ===== Footer ===== */
     footer {
@@ -241,18 +209,8 @@
       text-align: center;
     }
 
-    footer h2 {
-      color: var(--primary);
-      margin-bottom: 12px;
-    }
-
-    footer p {
-      max-width: 500px;
-      margin: 0 auto 20px;
-      font-size: 15px;
-      color: #4a6b73;
-    }
-
+    footer h2 { color: var(--primary); margin-bottom: 12px; }
+    footer p { max-width: 500px; margin: 0 auto 20px; font-size: 15px; color: #4a6b73; }
     .footer-btn {
       background-color: var(--primary);
       color: #ffffff;
@@ -262,12 +220,7 @@
       margin-bottom: 25px;
       cursor: pointer;
     }
-
-    .socials a {
-      margin: 0 10px;
-      font-size: 14px;
-      color: var(--primary);
-    }
+    .socials a { margin: 0 10px; font-size: 14px; color: var(--primary); }
   </style>
 </head>
 <body>
@@ -296,24 +249,31 @@
 
   <main>
     <section class="intro">
-      <h2>قوالب n8n مخصصة لمنصة سلة</h2>
-      <p>هذه قوالب أتمتة متنوعة مخصصة لمتاجر سلة الإلكترونية</p>
+      <h2>قوالب n8n احترافية مخصصة لمنصة سلة</h2>
+      <p>العملية بسيطة جدا ولا تحتاج خبرة تقنية. انسخ الكود، الصقه في n8n، اضبط الإعدادات وستحصل على أتمتة تعمل فورا (كل قالب تم شرح ضبط إعداداته على قناتنا).</p>
     </section>
 
     <section class="cards">
-      <a href="#" target="_blank" class="card">
-        <img src="template.jpg" alt="قالب n8n">
-        <h3>اسم القالب</h3>
-        <p>وصف قصير يوضح فائدة القالب وطريقة استخدامه</p>
-      </a>
 
       <div class="card">
-        <div class="placeholder">قريبا سيتم رفع المزيد من القوالب المميزة</div>
+        <a href="https://github.com/holools/Salla-n8n-Telegram-workflow/blob/main/workflow.json" target="_blank">
+          <img src="https://raw.githubusercontent.com/holools/n8n-templates/refs/heads/main/assets/images/05.jpg" alt="قالب n8n">
+        </a>
+
+        <div class="card-actions">
+          <a href="PUT_YOUTUBE_LINK_HERE" target="_blank" class="youtube-btn">▶ شاهد ضبط الإعدادات</a>
+          <a href="https://github.com/holools/Salla-n8n-Telegram-workflow/blob/main/workflow.json" target="_blank" class="download-btn">⬇ تحميل</a>
+        </div>
       </div>
 
       <div class="card">
         <div class="placeholder">قريبا سيتم رفع المزيد من القوالب المميزة</div>
       </div>
+
+      <div class="card">
+        <div class="placeholder">قريبا سيتم رفع المزيد من القوالب المميزة</div>
+      </div>
+
     </section>
 
     <section class="why">
@@ -337,19 +297,9 @@
   </footer>
 
   <script>
-    function openModal() {
-      document.getElementById("modal").style.display = "flex";
-    }
-
-    function closeModal() {
-      document.getElementById("modal").style.display = "none";
-    }
-
-    function closeOnOutside(e) {
-      if (e.target.id === "modal") {
-        closeModal();
-      }
-    }
+    function openModal() { document.getElementById("modal").style.display = "flex"; }
+    function closeModal() { document.getElementById("modal").style.display = "none"; }
+    function closeOnOutside(e) { if (e.target.id === "modal") closeModal(); }
   </script>
 
 </body>
